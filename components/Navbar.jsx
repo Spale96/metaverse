@@ -1,17 +1,17 @@
 'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 import styles from '../styles';
 
 import { navVariants } from '../utils/motion';
 
-import NavbarMenu from "./NavbarMenu";
+import NavbarMenu from './NavbarMenu';
 
 const Navbar = () => (
   <motion.nav variants={navVariants} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }} className={`${styles.xPaddings} py-8 mt-[2.5rem] relative`}>
 
-    <div className="absolute w-[50%] inset-0 gradient-01"></div>
+    <div className="absolute w-[50%] inset-0 gradient-01" />
 
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 relative`}>
 
