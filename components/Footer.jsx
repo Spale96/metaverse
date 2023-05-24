@@ -20,7 +20,7 @@ const Footer = () => (
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
           Enter the Metaverse
         </h4>
-        <a href="https://www.coursera.org/articles/how-to-access-the-metaverse" target='_blank' rel="noopener noreferrer" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
+        <a href="https://www.coursera.org/articles/how-to-access-the-metaverse" target="_blank" rel="noopener noreferrer" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
           <img
             src="/headset.svg"
             alt="headset"

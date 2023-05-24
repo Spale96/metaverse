@@ -1,9 +1,9 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 import { fadeIn } from '../utils/motion';
-import Link from 'next/link';
 
 const InsightCard = ({ imgUrl, title, subtitle, index, pageUrl }) => (
   <motion.div
@@ -25,10 +25,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index, pageUrl }) => (
         </p>
       </div>
 
-      <Link
-        target="_blank"
-        rel="noopener noreferrer"
-        href={pageUrl}>
+      <Link target="_blank" rel="noopener noreferrer" href={pageUrl}>
 
         <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
 
@@ -41,7 +38,7 @@ const InsightCard = ({ imgUrl, title, subtitle, index, pageUrl }) => (
 
       </Link>
     </div>
-  </motion.div >
+  </motion.div>
 );
 
 export default InsightCard;

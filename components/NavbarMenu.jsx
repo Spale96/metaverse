@@ -1,28 +1,22 @@
-'use client'
+'use client';
 
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 import { navVariantsMenu } from '../utils/motion';
-
 
 const NavbarMenu = () => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     return (
         <motion.div>
-            <img src="/menu.svg" alt="menu-img"
-                className="w-[24px] h-[24px] object-contain cursor-pointer"
-                onClick={() => setToggleMenu(true)} />
+
+            <img src="/menu.svg" alt="menu-img" className="w-[24px] h-[24px] object-contain cursor-pointer" onClick={() => setToggleMenu(true)} />
 
             {toggleMenu && (
-                <motion.div
-                    variants={navVariantsMenu}
-                    initial="hidden"
-                    whileInView="show"
-                    className='w-[100%] fixed top-0 left-0 h-[100vh] text-white bg-gradient-to-r from-indigo-500 to-violet-500 text-center z-20'>
+                <motion.div variants={navVariantsMenu} initial="hidden" whileInView="show" className='w-[100%] fixed top-0 left-0 h-[100vh] text-white bg-gradient-to-r from-indigo-500 to-violet-500 text-center z-20'>
 
                     <div className='mt-11 mb-8 w-[400px] mx-auto 2xl:mt-16 2xl:mb-14'>
                         <AiOutlineClose className="cursor-pointer" fontSize={27} onClick={() => setToggleMenu(false)} />
