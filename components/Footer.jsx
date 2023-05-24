@@ -1,11 +1,11 @@
 'use client';
 
+import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { socials } from '../constants';
 
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
-import Link from 'next/link';
 
 const Footer = () => (
   <motion.footer
@@ -20,7 +20,7 @@ const Footer = () => (
         <h4 className="font-bold md:text-[64px] text-[44px] text-white">
           Enter the Metaverse
         </h4>
-        <a href='https://www.coursera.org/articles/how-to-access-the-metaverse' target='_blank' className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
+        <a href="https://www.coursera.org/articles/how-to-access-the-metaverse" target='_blank' rel="noopener noreferrer" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
           <img
             src="/headset.svg"
             alt="headset"
@@ -43,11 +43,11 @@ const Footer = () => (
             Copyright © 2022 - 2023 Metaversus. All rights reserved.
           </p>
 
-
           <div className="flex gap-4">
             {socials.map((social) => (
               <Link
-                target='_blank'
+                rel="noopener noreferrer"
+                target="_blank"
                 href={social.pageUrl}
                 key={social.url}
               >

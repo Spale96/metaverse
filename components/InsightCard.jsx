@@ -5,7 +5,6 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 import Link from 'next/link';
 
-
 const InsightCard = ({ imgUrl, title, subtitle, index, pageUrl }) => (
   <motion.div
     variants={fadeIn('up', 'spring', index * 0.5, 1)}
@@ -27,23 +26,20 @@ const InsightCard = ({ imgUrl, title, subtitle, index, pageUrl }) => (
       </div>
 
       <Link
-        target='_blank'
+        target="_blank"
+        rel="noopener noreferrer"
         href={pageUrl}>
 
-        <div
-          className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white"
-        >
+        <div className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white">
 
           <img
             className="w-[40%] h-[40%] object-contain"
             src="/arrow.svg"
             alt="arrow"
           />
-
         </div>
 
       </Link>
-
     </div>
   </motion.div >
 );

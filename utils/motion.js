@@ -34,7 +34,7 @@ export const navVariantsMenu = {
     y: 0,
     transition: {
       type: 'spring',
-      stiffness: 60,
+      stiffness: 50,
       delay: 0.2,
     },
   },
