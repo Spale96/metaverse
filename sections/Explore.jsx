@@ -21,6 +21,7 @@ const Explore = () => {
         className={`${styles.innerWidth} mx-auto flex flex-col`}
       >
         <TypingText title="| The World" textStyles="text-center" />
+
         <TitleText
           title={<>Choose the world you want <br className="md:block hidden" /> to explore</>}
           textStyles="text-center"
