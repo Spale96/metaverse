@@ -18,8 +18,8 @@ const NavbarMenu = () => {
             {toggleMenu && (
                 <motion.div variants={navVariantsMenu} initial="hidden" whileInView="show" className="w-[100%] fixed top-0 left-0 h-[100vh] text-white bg-gradient-to-r from-indigo-500 to-violet-500 text-center z-20">
 
-                    <div className="mt-11 mb-8 w-[400px] mx-auto 2xl:mt-16 2xl:mb-14">
-                        <AiOutlineClose className="cursor-pointer" fontSize={27} onClick={() => setToggleMenu(false)} />
+                    <div className="mt-11 mb-8 w-[320px] mx-auto 2xl:mt-16 2xl:mb-14">
+                        <AiOutlineClose className="cursor-pointer" fontSize={30} onClick={() => setToggleMenu(false)} />
                     </div>
 
                     <ul className="text-2xl flex flex-col gap-6 2xl:gap-7">
